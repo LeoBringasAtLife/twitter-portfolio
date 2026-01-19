@@ -1,0 +1,10 @@
+Estructura de Archivos
+
+clone-twitter/
+├── index.html          (Página principal)
+├── css/style.css       (Estilos)
+├── javascript/main.js  (Funcionalidad)
+├── images/yo.png       (Foto de perfil)
+├── archivo.txt         (Notas de mejoras futuras)
+└── .vscode/           (Configuración del editor)
+
