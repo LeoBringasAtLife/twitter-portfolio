@@ -1,0 +1,7 @@
+Funcionalidad para botón "Seguir": Se podria agregar un script para que cambie el texto a "Siguiendo".
+
+Contador: Animar los números de "Repositorios", "Seguidores" u "Horas-de-código" para que suban de cero al valor final cuando el usuario entre a la página.
+
+
+y más ideas se escribirá acá (¡aquí!) jajaja
+
