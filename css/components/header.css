@@ -1,0 +1,27 @@
+/* COMPONENTE: Header y Avatar */
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--spacing-md);
+    margin-top: 0;
+    position: relative;
+}
+
+.profile-avatar {
+    position: relative;
+}
+
+.profile-avatar img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 1.3em;
+}
+
+.profile-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}

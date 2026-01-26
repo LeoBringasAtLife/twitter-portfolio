@@ -1,0 +1,140 @@
+/* COMPONENTE: Botones */
+
+.btn-more,
+.btn-follow {
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-base);
+}
+
+.btn-more {
+    background: transparent;
+    color: var(--text-secondary);
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid var(--border-medium);
+}
+
+.btn-more:hover {
+    border: 1px solid transparent;
+    background: rgba(101, 119, 134, 0.1);
+}
+
+.btn-follow {
+    background: var(--color-secondary);
+    color: var(--bg-primary);
+    min-width: 90px;
+}
+
+.btn-follow:hover {
+    background: var(--color-secondary-hover);
+}
+
+.btn-follow.following {
+    background: #1b1b1b;
+}
+
+.btn-more-projects {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: var(--color-secondary);
+    color: var(--bg-primary);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    font-size: var(--font-size-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-more-projects span {
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-more-projects span:nth-child(2) {
+    position: absolute;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.btn-more-projects:hover {
+    opacity: 0.9;
+}
+
+.btn-more-projects:hover span:nth-child(1) {
+    transform: translateY(-150%);
+    opacity: 0;
+}
+
+.btn-more-projects:hover span:nth-child(2) {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.btn-project {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background: #1b1b1b;
+    color: var(--bg-primary);
+    padding: 0.4rem 0.8rem;
+    min-width: 5rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: var(--font-size-base);
+    height: 2rem;
+    transition: var(--transition-fast);
+    opacity: 0.9;
+}
+
+.btn-project:hover {
+    background: #1b1b1bee;
+    opacity: 0.9;
+}
+
+.btn-text,
+.btn-icon {
+    position: absolute;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-text {
+    transform: translateY(0);
+}
+
+.btn-icon {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.btn-icon svg {
+    width: 22px;
+    height: 22px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-project:hover .btn-text {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.btn-project:hover .btn-icon {
+    transform: translateY(0);
+    opacity: 1;
+}

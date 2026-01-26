@@ -1,0 +1,98 @@
+/* COMPONENTE: Proyectos */
+
+.projects-section,
+.interests-section {
+    padding: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.projects-section h2,
+.interests-section h2 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--grid-gap);
+    align-items: stretch;
+}
+
+.project-card {
+    background: var(--bg-primary);
+    overflow: hidden;
+    transition: var(--transition-fast);
+    border: 1px solid var(--border-light);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card:hover {
+    border-color: var(--border-dark);
+}
+
+.project-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-info h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.project-info p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-md);
+    text-wrap: balance;
+}
+
+/* Tags de tecnologías */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.project-tags span {
+    border: 1px solid var(--bg-tag);
+    background-color: #0000001a;
+    color: #000000;
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+/* Links de proyecto */
+.project-links {
+    margin-top: auto;
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: flex-start;
+}
+
+/* Sección "Ver más" */
+.more-projects {
+    text-align: center;
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.9;
+}

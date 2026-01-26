@@ -1,0 +1,55 @@
+:root {
+    --font-family-primary: 'Oxygen', sans-serif;
+    --font-family-secondary: sans-serif;
+
+    /* Colores principales */
+    --color-primary: #005B94;
+    --color-primary-hover: #005b9491;
+    --color-secondary: #14171a;
+    --color-secondary-hover: #000000b4;
+
+    /* Colores de texto */
+    --text-primary: #14171a;
+    --text-secondary: #39434C;
+
+    /* Fondos */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-tag: hsla(0, 0%, 0%, 0.102);
+    --bg-tag-blue: #094367;
+
+    /* Bordes */
+    --border-light: #e6ecf0;
+    --border-medium: #ccd6dd;
+    --border-dark: #b2b2b2;
+
+    /* Sombras */
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    /* Espaciado */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 2.5rem;
+    --spacing-3xl: 3rem;
+
+    /* Tamaños de fuente */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.8rem;
+    --font-size-base: 0.9rem;
+    --font-size-md: 1.125em;
+    --font-size-lg: 1.1rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+
+    /* Transiciones */
+    --transition-fast: all 0.2s ease;
+    --transition-medium: all 0.3s ease;
+
+    /* Layout */
+    --container-max-width: 1000px;
+    --grid-gap: 1.5rem;
+}

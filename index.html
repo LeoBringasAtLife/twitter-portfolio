@@ -3,307 +3,448 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Proyecto educativo: Clon de X (anteriormente Twitter) creado con fines de aprendizaje de desarrollo web.">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+        name="description"
+        content="Portfolio de Leonardo Bringas - Desarrollador Web Full Stack especializado en JavaScript, Python e IA."
+    >
+
+    <!-- Open Graph -->
+    <meta
+        property="og:type"
+        content="website"
+    >
+    <meta
+        property="og:title"
+        content="Leonardo Bringas | Portfolio"
+    >
+    <meta
+        property="og:description"
+        content="Desarrollador Web Full Stack - JavaScript, Python & IA"
+    >
+    <meta
+        property="og:url"
+        content="https://leobringas.dev"
+    >
+
+    <!-- Twitter -->
+    <meta
+        property="twitter:card"
+        content="summary_large_image"
+    >
+    <meta
+        property="twitter:title"
+        content="Leonardo Bringas | Portfolio"
+    >
 
     <title>Leonardo Bringas | Portfolio</title>
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="javascript/main.js"></script>
+    <!-- Favicon (agrega tu favicon.ico) -->
+    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link
+        rel="stylesheet"
+        href="css/main.css"
+    >
 
 </head>
 
 <body>
-    <div>
-        <div class="profile-container">
-            <div class="profile-header">
-                <div class="profile-avatar">
-                    <img src="images/yo.png" alt="Foto de perfil de LeooBringasAtLife">
-                </div>
-
-                <div class="profile-actions">
-                    <button class="btn-more">
-                        <span class="material-symbols-outlined">more_horiz</span>
-                    </button>
-                    <button class="btn-follow" id="followButton">Seguir</button>
-                </div>
-            </div>
-
-            <!-- Información principal -->
-            <div class="profile-info">
-                <h1>Leonardo Bringas</h1>
-                <p class="username">@LeoBringasAtLife</p>
-                <p class="bio">
-                    Seguidor de Jesús, Desarrollador Web, Estudiante de Ingenieria en Software, Editor de vídeo, Vibe Coding, Creador de Contenido, Python & IA.  🚀
-                </p>
-                <div class="profile-details">
-                    <div class="detail">
-                        <span class="material-symbols-outlined">link</span>
-                        <a href="https://leobringasatlife.site" target="_blank"
-                            rel="noopener noreferrer">leobringasatlife.site</a>
-                    </div>
-                    <div class="detail">
-                        <span class="material-symbols-outlined">location_on</span>
-                        <span>Argentina</span>
-                    </div>
-                    <div class="detail">
-                        <span class="material-symbols-outlined">calendar_month</span>
-                        <span>Se unió el septiembre de 2025</span>
-                    </div>
-                </div>
-
-                <div class="profile-stats">
-                    <span class="stat">
-                        <strong>40</strong>
-                        <span>Repositorios públicos</span>
-                    </span>
-                    <span class="stat">
-                        <strong>+100</strong>
-                        <span>Horas de código</span>
-                    </span>
-                    <span class="stat">
-                        <strong>49</strong>
-                        <span>Contribuciones</span>
-                    </span>
-                </div>
-            </div>
-
-            <!-- Sección de Proyectos -->
-            <section class="projects-section" id="publicaciones">
-                <h2>
-                    <span class="material-symbols-outlined">code_blocks</span>
-                    Proyectos
-                </h2>
-
-                <div class="projects-grid">
-                    <!-- Paint-JS-Win95 -->
-                    <div class="project-card">
-                        <div class="project-info">
-                        <h3 style="display: flex; gap: 0.5rem; width: 100%; cursor: default;">
-                            Paint.js [Win 95]
-                            <img
-                                src="images/Github-100.png"
-                                alt="Logo"
-                                style="width: 24px; height: 24px; object-fit: cover; border-radius: 4px; display: block; opacity: 0.6;"
-                                loading="lazy"
-                            />
-                        </h3>
-                            <p>Clon nostálgico de Microsoft Paint con estética Windows 95. Implementa herramientas de dibujo avanzadas, selección de colores, pinceles, opciones de relleno y más. Totalmente funcional sin dependencias externas, demostrando dominio de Canvas API, JavaScript vanilla y UI retro.</p>
-                            <div class="project-tags">
-                                <span>JavaScript</span>
-                                <span>Canvas</span>
-                                <span>CSS</span>
-                                <span>HTML</span>
-                            </div>
-
-                            <!-- Botones -->
-                            <div class="project-links">
-                                <!-- Botón GitHub -->
-                                <a href="https://github.com/LeoBringasAtLife/Paint-JS-Win95" target="_blank"
-                                    class="btn-project" noreferrer rel="noopener">
-                                    <span class="btn-text">GitHub</span>
-                                    <span class="btn-icon">
-                                        <!-- SVG de GitHub -->
-                                        <svg data-testid="geist-icon" height="16" stroke-linejoin="round"
-                                            viewBox="0 0 16 16" width="16" style="color: currentcolor;">
-                                            <g clip-path="url(#clip0_872_3147)">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8 0C3.58 0 0 3.57879 0 7.99729C0 11.5361 2.29 14.5251 5.47 15.5847C5.87 15.6547 6.02 15.4148 6.02 15.2049C6.02 15.0149 6.01 14.3851 6.01 13.7154C4 14.0852 3.48 13.2255 3.32 12.7757C3.23 12.5458 2.84 11.836 2.5 11.6461C2.22 11.4961 1.82 11.1262 2.49 11.1162C3.12 11.1062 3.57 11.696 3.72 11.936C4.44 13.1455 5.59 12.8057 6.05 12.5957C6.12 12.0759 6.33 11.726 6.56 11.5261C4.78 11.3262 2.92 10.6364 2.92 7.57743C2.92 6.70773 3.23 5.98797 3.74 5.42816C3.66 5.22823 3.38 4.40851 3.82 3.30888C3.82 3.30888 4.49 3.09895 6.02 4.1286C6.66 3.94866 7.34 3.85869 8.02 3.85869C8.7 3.85869 9.38 3.94866 10.02 4.1286C11.55 3.08895 12.22 3.30888 12.22 3.30888C12.66 4.40851 12.38 5.22823 12.3 5.42816C12.81 5.98797 13.12 6.69773 13.12 7.57743C13.12 10.6464 11.25 11.3262 9.47 11.5261C9.76 11.776 10.01 12.2558 10.01 13.0056C10.01 14.0752 10 14.9349 10 15.2049C10 15.4148 10.15 15.6647 10.55 15.5847C12.1381 15.0488 13.5182 14.0284 14.4958 12.6673C15.4735 11.3062 15.9996 9.67293 16 7.99729C16 3.57879 12.42 0 8 0Z"
-                                                    fill="currentColor"></path>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_872_3147">
-                                                    <rect width="16" height="16" fill="white"></rect>
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>
-                                </a>
-                                <a href="https://leobringasatlife.github.io/Paint-JS-Win95/" noreferrer rel="noopener"
-                                    target="_blank" class="btn-project">
-                                    <span class="btn-text">Abrir</span>
-                                    <span class="btn-icon">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24"
-                                            fill="currentColor"
-                                        >
-                                            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h5v2H5v12h12v-5h2v7H3V5h2z" />
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-info">
-                            <h3 style="display: flex; gap: 0.5rem; width: 100%; cursor: default;">
-                                Buscador Wikipedia
-                                <img
-                                    src="images/Github-100.png"
-                                    alt="Logo"
-                                    style="width: 24px; height: 24px; object-fit: cover; border-radius: 4px; display: block; opacity: 0.6;"
-                                    loading="lazy"
-                                />
-                            </h3>
-                            <p>Buscador funcional de Wikipedia con búsqueda instantánea y resultados en tiempo real. Integración completa con APIs externas, manejo asincrónico de datos con Promises/Async-Await, interfaz limpia y responsiva. Demuestra capacidad de trabajar con APIs de terceros y optimización de búsqueda.</p>
-                            <div class="project-tags">
-                                <span>JavaScript</span>
-                                <span>APIs</span>
-                                <span>Fetch API</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/LeoBringasAtLife/Searcher-Wikipedia" noreferrer rel="noopener"
-                                    target="_blank" class="btn-project">
-                                    <span class="btn-text">GitHub</span>
-                                    <span class="btn-icon">
-                                        <!-- SVG de GitHub -->
-                                        <svg data-testid="geist-icon" height="16" stroke-linejoin="round"
-                                            viewBox="0 0 16 16" width="16" style="color: currentcolor;">
-                                            <g clip-path="url(#clip0_872_3147)">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8 0C3.58 0 0 3.57879 0 7.99729C0 11.5361 2.29 14.5251 5.47 15.5847C5.87 15.6547 6.02 15.4148 6.02 15.2049C6.02 15.0149 6.01 14.3851 6.01 13.7154C4 14.0852 3.48 13.2255 3.32 12.7757C3.23 12.5458 2.84 11.836 2.5 11.6461C2.22 11.4961 1.82 11.1262 2.49 11.1162C3.12 11.1062 3.57 11.696 3.72 11.936C4.44 13.1455 5.59 12.8057 6.05 12.5957C6.12 12.0759 6.33 11.726 6.56 11.5261C4.78 11.3262 2.92 10.6364 2.92 7.57743C2.92 6.70773 3.23 5.98797 3.74 5.42816C3.66 5.22823 3.38 4.40851 3.82 3.30888C3.82 3.30888 4.49 3.09895 6.02 4.1286C6.66 3.94866 7.34 3.85869 8.02 3.85869C8.7 3.85869 9.38 3.94866 10.02 4.1286C11.55 3.08895 12.22 3.30888 12.22 3.30888C12.66 4.40851 12.38 5.22823 12.3 5.42816C12.81 5.98797 13.12 6.69773 13.12 7.57743C13.12 10.6464 11.25 11.3262 9.47 11.5261C9.76 11.776 10.01 12.2558 10.01 13.0056C10.01 14.0752 10 14.9349 10 15.2049C10 15.4148 10.15 15.6647 10.55 15.5847C12.1381 15.0488 13.5182 14.0284 14.4958 12.6673C15.4735 11.3062 15.9996 9.67293 16 7.99729C16 3.57879 12.42 0 8 0Z"
-                                                    fill="currentColor"></path>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_872_3147">
-                                                    <rect width="16" height="16" fill="white"></rect>
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>
-                                </a>
-                                <a href="https://leobringasatlife.github.io/Searcher-Wikipedia/" target="_blank"
-                                    class="btn-project">
-                                    <span class="btn-text">Abrir</span>
-                                    <span class="btn-icon">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24"
-                                            fill="currentColor"
-                                        >
-                                            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h5v2H5v12h12v-5h2v7H3V5h2z" />
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-info">
-                            <h3 style="display: flex; gap: 0.5rem; width: 100%; cursor: default;">
-                            Registro Diario 2026
-                            <img
-                                src="images/Github-100.png"
-                                alt="Logo"
-                                style="width: 24px; height: 24px; object-fit: cover; border-radius: 4px; display: block; opacity: 0.6;"
-                                loading="lazy"
-                            />
-                        </h3>
-                            <p>Tracker personal de productividad y registro diario de vida. Herramienta útil y actual para registrar actividades diarias, metas y reflexiones. Implementa almacenamiento persistente con LocalStorage, interfaz intuitiva y exportación de datos. Proyecto práctico que demuestra capacidad de crear herramientas útiles.</p>
-                            <div class="project-tags">
-                                <span>JavaScript</span>
-                                <span>LocalStorage</span>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/LeoBringasAtLife/daily-log-2026" target="_blank"
-                                    class="btn-project">
-                                    <span class="btn-text">GitHub</span>
-                                    <span class="btn-icon">
-                                        <!-- SVG de GitHub -->
-                                        <svg data-testid="geist-icon" height="16" stroke-linejoin="round"
-                                            viewBox="0 0 16 16" width="16" style="color: currentcolor;">
-                                            <g clip-path="url(#clip0_872_3147)">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8 0C3.58 0 0 3.57879 0 7.99729C0 11.5361 2.29 14.5251 5.47 15.5847C5.87 15.6547 6.02 15.4148 6.02 15.2049C6.02 15.0149 6.01 14.3851 6.01 13.7154C4 14.0852 3.48 13.2255 3.32 12.7757C3.23 12.5458 2.84 11.836 2.5 11.6461C2.22 11.4961 1.82 11.1262 2.49 11.1162C3.12 11.1062 3.57 11.696 3.72 11.936C4.44 13.1455 5.59 12.8057 6.05 12.5957C6.12 12.0759 6.33 11.726 6.56 11.5261C4.78 11.3262 2.92 10.6364 2.92 7.57743C2.92 6.70773 3.23 5.98797 3.74 5.42816C3.66 5.22823 3.38 4.40851 3.82 3.30888C3.82 3.30888 4.49 3.09895 6.02 4.1286C6.66 3.94866 7.34 3.85869 8.02 3.85869C8.7 3.85869 9.38 3.94866 10.02 4.1286C11.55 3.08895 12.22 3.30888 12.22 3.30888C12.66 4.40851 12.38 5.22823 12.3 5.42816C12.81 5.98797 13.12 6.69773 13.12 7.57743C13.12 10.6464 11.25 11.3262 9.47 11.5261C9.76 11.776 10.01 12.2558 10.01 13.0056C10.01 14.0752 10 14.9349 10 15.2049C10 15.4148 10.15 15.6647 10.55 15.5847C12.1381 15.0488 13.5182 14.0284 14.4958 12.6673C15.4735 11.3062 15.9996 9.67293 16 7.99729C16 3.57879 12.42 0 8 0Z"
-                                                    fill="currentColor"></path>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_872_3147">
-                                                    <rect width="16" height="16" fill="white"></rect>
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>
-                                </a>
-                                <a href="https://leobringasatlife.github.io/daily-log-2026/" target="_blank"
-                                    class="btn-project">
-                                    <span class="btn-text">Abrir</span>
-                                    <span class="btn-icon">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24"
-                                            fill="currentColor"
-                                        >
-                                            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h5v2H5v12h12v-5h2v7H3V5h2z" />
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>  
-            </section>
-
-            <div class="more-projects">
-                <a
-                    href="https://github.com/leobringasatlife/"
-                    class="btn-more-projects"
-                    target="_blank"
-                    rel="noopener noreferrer"
+    <div class="profile-container">
+        <header class="profile-header">
+            <div class="profile-avatar">
+                <img
+                    src="images/profile/yo.png"
+                    alt="Foto de perfil de Leonardo Bringas"
+                    loading="lazy"
                 >
-                    <span>Ver más proyectos en mi GitHub</span>
-                    <span>Ver más proyectos en mi GitHub</span>
-                </a>
             </div>
-        </div>
 
-<footer class="footer-complete">
-    <div class="footer-container">
-        <div class="footer-content">
-            <div class="footer-main">
-                <div class="footer-brand">
-                    <div class="footer-social" style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
-                        <div class="footer-links">
-                            <a href="https://www.instagram.com/leobringasatlife/" target="_blank">
-                                <span>Instagram</span>
-                                <span>Instagram</span>
+            <div class="profile-actions">
+                <button
+                    class="btn-more"
+                    aria-label="Más opciones"
+                >
+                    <span class="material-symbols-outlined">more_horiz</span>
+                </button>
+                <button
+                    class="btn-follow"
+                    id="followButton"
+                >Seguir</button>
+            </div>
+        </header>
+
+        <section class="profile-info">
+            <h1>Leonardo Bringas</h1>
+            <p class="username">@LeoBringasAtLife</p>
+
+            <p class="bio">
+                Seguidor de Jesús, Desarrollador Web, Estudiante de Licenciatura en Informatica, Editor de vídeo, Vibe Coding, Creador de Contenido, Python & IA, Emprendedor. 📈
+            </p>
+
+            <div class="profile-details">
+                <div class="detail">
+                    <span
+                        class="material-symbols-outlined"
+                        aria-hidden="true"
+                    >link</span>
+                    <a
+                        href="https://leobringasatlife.site"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        leobringasatlife.site
+                    </a>
+                </div>
+                <div class="detail">
+                    <span
+                        class="material-symbols-outlined"
+                        aria-hidden="true"
+                    >location_on</span>
+                    <span>Argentina</span>
+                </div>
+                <div class="detail">
+                    <span
+                        class="material-symbols-outlined"
+                        aria-hidden="true"
+                    >calendar_month</span>
+                    <span>Se unió en septiembre de 2024</span>
+                </div>
+            </div>
+
+            <div class="profile-stats">
+                <span class="stat">
+                    <strong>40</strong>
+                    <span>Repositorios públicos</span>
+                </span>
+                <span class="stat">
+                    <strong>+100</strong>
+                    <span>Horas de código</span>
+                </span>
+                <span class="stat">
+                    <strong>49</strong>
+                    <span>Contribuciones</span>
+                </span>
+            </div>
+        </section>
+
+        <section
+            class="projects-section"
+            id="proyectos"
+        >
+            <h2>
+                <span
+                    class="material-symbols-outlined"
+                    aria-hidden="true"
+                >code_blocks</span>
+                Proyectos
+            </h2>
+
+            <div class="projects-grid">
+                <!-- Proyecto 01 -->
+                <article class="project-card" title="Proyecto 01: Paint.js (Windows 95)">
+                    <div class="project-image">
+                        <img
+                            src="images/projects/paint-js.png"
+                            alt="Vista previa de Paint.js Win 95"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <h3 style="display: flex; gap: 0.5rem; width: 100%; cursor: default;">
+                            Paint.js | Windows 95
+                        </h3>
+                        <p>Clon nostálgico de Microsoft Paint con estética Windows 95. Implementa herramientas de dibujo
+                            avanzadas, selección de colores, pinceles y opciones de relleno. Totalmente funcional sin
+                            dependencias externas.</p>
+
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Canvas</span>
+                            <span>CSS</span>
+                            <span>HTML</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/LeoBringasAtLife/Paint-JS-Win95"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-project"
+                                aria-label="Ver código en GitHub"
+                            >
+                                <span class="btn-text">GitHub</span>
+                                <span class="btn-icon">
+                                    <svg
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        width="16"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M8 0C3.58 0 0 3.57879 0 7.99729C0 11.5361 2.29 14.5251 5.47 15.5847C5.87 15.6547 6.02 15.4148 6.02 15.2049C6.02 15.0149 6.01 14.3851 6.01 13.7154C4 14.0852 3.48 13.2255 3.32 12.7757C3.23 12.5458 2.84 11.836 2.5 11.6461C2.22 11.4961 1.82 11.1262 2.49 11.1162C3.12 11.1062 3.57 11.696 3.72 11.936C4.44 13.1455 5.59 12.8057 6.05 12.5957C6.12 12.0759 6.33 11.726 6.56 11.5261C4.78 11.3262 2.92 10.6364 2.92 7.57743C2.92 6.70773 3.23 5.98797 3.74 5.42816C3.66 5.22823 3.38 4.40851 3.82 3.30888C3.82 3.30888 4.49 3.09895 6.02 4.1286C6.66 3.94866 7.34 3.85869 8.02 3.85869C8.7 3.85869 9.38 3.94866 10.02 4.1286C11.55 3.08895 12.22 3.30888 12.22 3.30888C12.66 4.40851 12.38 5.22823 12.3 5.42816C12.81 5.98797 13.12 6.69773 13.12 7.57743C13.12 10.6464 11.25 11.3262 9.47 11.5261C9.76 11.776 10.01 12.2558 10.01 13.0056C10.01 14.0752 10 14.9349 10 15.2049C10 15.4148 10.15 15.6647 10.55 15.5847C12.1381 15.0488 13.5182 14.0284 14.4958 12.6673C15.4735 11.3062 15.9996 9.67293 16 7.99729C16 3.57879 12.42 0 8 0Z"
+                                        />
+                                    </svg>
+                                </span>
                             </a>
-                            <a href="https://github.com/leobringasatlife" target="_blank">
-                                <span>GitHub</span>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://twitter.com/leobringasatlife" target="_blank">
-                                <span>Twitter/X</span>
-                                <span>Twitter/X</span>
-                            </a>
-                            <a href="https://linkedin.com/in/leobringasatlife" target="_blank">
-                                <span>LinkedIn</span>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="https://codepen.io/leobringasatlife" target="_blank">
-                                <span>CodePen</span>
-                                <span>CodePen</span>
+                            <a
+                                href="https://leobringasatlife.github.io/Paint-JS-Win95/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-project"
+                            >
+                                <span class="btn-text">Abrir</span>
+                                <span class="btn-icon">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h5v2H5v12h12v-5h2v7H3V5h2z"
+                                        />
+                                    </svg>
+                                </span>
                             </a>
                         </div>
-                        
-                        <p style="font-size: 1rem; display: flex; flex-direction: column; align-items: center; gap: 6px; margin: 0;">
-                            <span title="Este no es un error de verdad." style="font-family: 'Courier New', monospace; color: #ff3e3e; border: 1px solid #ff3e3e; padding: 2px 8px; font-weight: bold;">
+                    </div>
+                </article>
+                <!-- Proyecto 02 -->
+                <article class="project-card" title="Proyecto 02: Buscador Wikipedia">
+                    <div class="project-image">
+                        <img
+                            src="images/projects/wikipedia.png"
+                            alt="Vista previa de Buscador Wikipedia"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <h3 style="display: flex; gap: 0.5rem; width: 100%; cursor: default;">
+                            Buscador Wikipedia
+                        </h3>
+                        <p>Buscador funcional con búsqueda instantánea y resultados en tiempo real. Integración completa
+                            con APIs externas y manejo asincrónico con Promises/Async-Await.</p>
+
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>APIs</span>
+                            <span>Fetch API</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/LeoBringasAtLife/Searcher-Wikipedia"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-project"
+                            >
+                                <span class="btn-text">GitHub</span>
+                                <span class="btn-icon">
+                                    <svg
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        width="16"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M8 0C3.58 0 0 3.57879 0 7.99729C0 11.5361 2.29 14.5251 5.47 15.5847C5.87 15.6547 6.02 15.4148 6.02 15.2049C6.02 15.0149 6.01 14.3851 6.01 13.7154C4 14.0852 3.48 13.2255 3.32 12.7757C3.23 12.5458 2.84 11.836 2.5 11.6461C2.22 11.4961 1.82 11.1262 2.49 11.1162C3.12 11.1062 3.57 11.696 3.72 11.936C4.44 13.1455 5.59 12.8057 6.05 12.5957C6.12 12.0759 6.33 11.726 6.56 11.5261C4.78 11.3262 2.92 10.6364 2.92 7.57743C2.92 6.70773 3.23 5.98797 3.74 5.42816C3.66 5.22823 3.38 4.40851 3.82 3.30888C3.82 3.30888 4.49 3.09895 6.02 4.1286C6.66 3.94866 7.34 3.85869 8.02 3.85869C8.7 3.85869 9.38 3.94866 10.02 4.1286C11.55 3.08895 12.22 3.30888 12.22 3.30888C12.66 4.40851 12.38 5.22823 12.3 5.42816C12.81 5.98797 13.12 6.69773 13.12 7.57743C13.12 10.6464 11.25 11.3262 9.47 11.5261C9.76 11.776 10.01 12.2558 10.01 13.0056C10.01 14.0752 10 14.9349 10 15.2049C10 15.4148 10.15 15.6647 10.55 15.5847C12.1381 15.0488 13.5182 14.0284 14.4958 12.6673C15.4735 11.3062 15.9996 9.67293 16 7.99729C16 3.57879 12.42 0 8 0Z"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a
+                                href="https://leobringasatlife.github.io/Searcher-Wikipedia/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-project"
+                            >
+                                <span class="btn-text">Abrir</span>
+                                <span class="btn-icon">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h5v2H5v12h12v-5h2v7H3V5h2z"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 03 -->
+                <article class="project-card" title="Proyecto 03: Registro Diario 2026">
+                    <div class="project-image">
+                        <img
+                            src="images/projects/daily-log.png"
+                            alt="Vista previa de Registro Diario 2026"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <h3 style="display: flex; gap: 0.5rem; width: 100%; cursor: default;">
+                            Registro Diario 2026
+                        </h3>
+                        <p>Tracker personal de productividad. Implementa almacenamiento persistente con LocalStorage,
+                            interfaz intuitiva y exportación de datos.</p>
+
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>LocalStorage</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/LeoBringasAtLife/daily-log-2026"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-project"
+                            >
+                                <span class="btn-text">GitHub</span>
+                                <span class="btn-icon">
+                                    <svg
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        width="16"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M8 0C3.58 0 0 3.57879 0 7.99729C0 11.5361 2.29 14.5251 5.47 15.5847C5.87 15.6547 6.02 15.4148 6.02 15.2049C6.02 15.0149 6.01 14.3851 6.01 13.7154C4 14.0852 3.48 13.2255 3.32 12.7757C3.23 12.5458 2.84 11.836 2.5 11.6461C2.22 11.4961 1.82 11.1262 2.49 11.1162C3.12 11.1062 3.57 11.696 3.72 11.936C4.44 13.1455 5.59 12.8057 6.05 12.5957C6.12 12.0759 6.33 11.726 6.56 11.5261C4.78 11.3262 2.92 10.6364 2.92 7.57743C2.92 6.70773 3.23 5.98797 3.74 5.42816C3.66 5.22823 3.38 4.40851 3.82 3.30888C3.82 3.30888 4.49 3.09895 6.02 4.1286C6.66 3.94866 7.34 3.85869 8.02 3.85869C8.7 3.85869 9.38 3.94866 10.02 4.1286C11.55 3.08895 12.22 3.30888 12.22 3.30888C12.66 4.40851 12.38 5.22823 12.3 5.42816C12.81 5.98797 13.12 6.69773 13.12 7.57743C13.12 10.6464 11.25 11.3262 9.47 11.5261C9.76 11.776 10.01 12.2558 10.01 13.0056C10.01 14.0752 10 14.9349 10 15.2049C10 15.4148 10.15 15.6647 10.55 15.5847C12.1381 15.0488 13.5182 14.0284 14.4958 12.6673C15.4735 11.3062 15.9996 9.67293 16 7.99729C16 3.57879 12.42 0 8 0Z"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a
+                                href="https://leobringasatlife.github.io/daily-log-2026/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-project"
+                            >
+                                <span class="btn-text">Abrir</span>
+                                <span class="btn-icon">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h5v2H5v12h12v-5h2v7H3V5h2z"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="more-projects">
+            <a
+                href="https://github.com/leobringasatlife/"
+                class="btn-more-projects"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Explorar el repositorio completo de Leonardo Bringas en GitHub"
+            >
+                <span>Ver más proyectos en GitHub</span>
+                <span>Ver más proyectos en GitHub</span>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer-complete">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-social">
+                            <div class="footer-links">
+                                <a
+                                    href="https://www.instagram.com/leobringasatlife/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title="Perfil de Instagram de Leonardo Bringas"
+                                >
+                                    <span>LeoBringasAtLife</span>
+                                    <span>LeoBringasAtLife</span>
+                                </a>
+                                <a
+                                    href="https://www.instagram.com/leobringas.site/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title="Instagram del Emprendimiento de Leonardo Bringas"
+                                >
+                                    <span>LeoBringas.site</span>
+                                    <span>LeoBringas.site</span>
+                                </a>
+                                <a
+                                    href="https://github.com/leobringasatlife"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title="Perfil de Github de Leonardo Bringas"
+                                >
+                                    <span>GitHub</span>
+                                    <span>GitHub</span>
+                                </a>
+                                <a
+                                    href="https://twitter.com/leobringasatlife"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title="Perfil de Twitter/X de Leonardo Bringas"
+                                >
+                                    <span>Twitter/X</span>
+                                    <span>Twitter/X</span>
+                                </a>
+                                <a
+                                    href="https://linkedin.com/in/leobringasatlife"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title="Perfil de LinkedIn de Leonardo Bringas"
+                                >
+                                    <span>LinkedIn</span>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a
+                                    href="https://codepen.io/leobringasatlife"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title="Perfil de Codepen de Leonardo Bringas"
+                                >
+                                    <span>CodePen</span>
+                                    <span>CodePen</span>
+                                </a>
+                            </div>
+
+                        <p class="error-container">
+                            <span
+                                class="error-tag"
+                                title="¿Derechos de autor? Ni idea. Soy yo."
+                            >
                                 ERROR: 404-DERECHOS-NO-ENCONTRADOS
                             </span>
                         </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
+    <script type="module" src="javascript/main.js"></script>
+
 </body>
 
 </html>

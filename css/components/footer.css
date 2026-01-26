@@ -1,0 +1,115 @@
+/* COMPONENTE: Footer */
+
+.footer-complete {
+    font-family: var(--font-family-secondary);
+    background: var(--bg-primary);
+    border-top: 1px solid var(--border-light);
+    margin-top: var(--spacing-3xl);
+}
+
+.footer-container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer-content {
+    padding: var(--spacing-2xl) var(--spacing-lg) var(--spacing-xl);
+}
+
+.footer-main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.footer-links {
+    display: flex;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-social a {
+    border: 1px solid var(--border-medium);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px 8px;
+    transition: var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social a span {
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-social a span:nth-child(2) {
+    position: absolute;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.footer-social a:hover {
+    border: 1px solid transparent;
+    background-color: var(--color-secondary);
+    color: var(--bg-primary);
+    opacity: 0.9;
+}
+
+.footer-social a:hover span:nth-child(1) {
+    transform: translateY(-150%);
+    opacity: 0;
+}
+
+.footer-social a:hover span:nth-child(2) {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.footer-social p {
+    color: var(--text-primary);
+    margin: 0;
+    font-size: 14px;
+}
+
+.error-container {
+    font-size: 1rem;
+}
+
+.error-tag {
+    font-family: 'Courier New', monospace;
+    color: #b50000;
+    border: 1px solid #b50000;
+    padding: 3px 8px;
+    font-weight: bold;
+    cursor: help;
+
+    display: inline-block;
+    transition: var(--transition-medium);
+}
+
+.error-tag:hover {
+    background-color: #b50000;
+    color: #ffffff;
+    opacity: 0.8;
+}

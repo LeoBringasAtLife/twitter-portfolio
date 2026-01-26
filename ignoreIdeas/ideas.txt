@@ -1,3 +1,0 @@
-Funcionalidad para botón "Seguir": Se podria agregar un script para que cambie el texto a "Siguiendo".
-
-y más ideas se escribirá acá (¡aquí!) jajaja

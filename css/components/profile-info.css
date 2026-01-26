@@ -1,0 +1,77 @@
+/* COMPONENTE: Información del Perfil */
+
+.profile-info {
+    padding: var(--spacing-md) var(--spacing-lg) 0;
+}
+
+.profile-info h1 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.username {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.bio {
+    color: var(--text-primary);
+    margin-bottom: 1em;
+    font-size: var(--font-size-md);
+    text-wrap: balance;
+}
+
+/* Detalles del perfil */
+.profile-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+    color: var(--text-secondary);
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.detail a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.detail a:hover {
+    text-decoration: underline;
+    color: var(--color-primary-hover);
+}
+
+/* Estadísticas */
+.profile-stats {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: var(--transition-fast);
+    cursor: default;
+}
+
+.stat:hover {
+    color: var(--text-primary);
+}
+
+.stat strong {
+    font-weight: 700;
+    color: var(--text-primary);
+    user-select: none;
+}
